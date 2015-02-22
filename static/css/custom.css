@@ -19,3 +19,29 @@ ul.footer-content {
     margin: 1px 2px;
     padding: 2px 4px;
 }
+
+/* Social links beside About me */
+div.aboutme-social-container {
+    display: block;
+    clear: both;
+}
+
+div.aboutme-social-links {
+    float: left;
+    display: inline-block;
+}
+
+i.aboutme-social-links {
+    border-radius: 20%;
+    border: solid transparent 1px;
+    color: #777777;
+    font-size: 1.3em;
+    margin: 0;
+    padding: 1px;
+    text-align: center;
+    text-decoration: none;
+}
+i.aboutme-social-links:hover {
+    background-color: #777777;
+    color: #fff;
+}
