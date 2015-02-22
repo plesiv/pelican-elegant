@@ -94,13 +94,15 @@
             {% from '_includes/_defaults.html' import RECENT_ARTICLES_COUNT with context %}
             {% if loop.index0 < RECENT_ARTICLES_COUNT %}
             <article>
-                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a>
-                <section>
-                    posted in
-                <div class="recent-posts-time">
-                <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
-                </div>
-                </section>
+                <a class="article-title" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a>
+                <time class="recent-posts-time" pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+                {% if article.tags and article.tags[0]|trim|count > 0 %}
+                <ul class="list-of-tags tags-in-index">
+                    {% for tag in article.tags|sort %}
+                    <li><a href="{{ SITEURL }}/tags.html#{{ tag.slug }}-ref">{{ tag }}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
             </article>
             {% endif %}
             {% endfor %}

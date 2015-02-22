@@ -8,3 +8,14 @@
 ul.footer-content {
     height: 20px;
 }
+
+/* Lower tags in Landing page */
+.tags-in-index li {
+    font-size: 0.8em;
+    line-height: 22px;
+}
+
+.tags-in-index a {
+    margin: 1px 2px;
+    padding: 2px 4px;
+}
