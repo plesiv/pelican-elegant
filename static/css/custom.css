@@ -10,6 +10,10 @@ ul.footer-content {
 }
 
 /* Lower tags in Landing page */
+ul.tags-in-index {
+    margin-left: -2px;
+}
+
 .tags-in-index li {
     font-size: 0.8em;
     line-height: 22px;
@@ -41,6 +45,7 @@ i.aboutme-social-links {
     text-align: center;
     text-decoration: none;
 }
+
 i.aboutme-social-links:hover {
     background-color: #777777;
     color: #fff;
