@@ -1,0 +1,10 @@
+/* Lower footer */
+#content-sans-footer {
+    margin-bottom: -38px;
+}
+#push {
+    height: 38px;
+}
+ul.footer-content {
+    height: 20px;
+}
