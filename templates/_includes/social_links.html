@@ -8,8 +8,8 @@
         {% if loop.first %}
             {% set link_title = 'My ' + item + ' Profile' %}
             {% set link_icon = item.lower() %}
-            {% if item.lower() == 'email' %}
-                {% set link_title = 'My ' + item + ' Address' %}
+            {% if item.lower() == 'envelope' %}
+                {% set link_title = 'My email Address' %}
                 {% set link_icon = 'envelope' %}
             {% elif item.lower() == 'rss' %}
                 {% set link_title = 'Subscribe in a reader' %}
