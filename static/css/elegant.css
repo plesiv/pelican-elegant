@@ -183,28 +183,31 @@ article div.article-content ul:not(.articles-timeline) a:hover {
     text-decoration: none;
     text-shadow: none;
 }
-.article-content, div.recent-posts p {
-    font: 1.2em/1.6em 'PT Serif', Georgia, 'Times New Roman', Times, Serif;
+.index-page-content, .article-content, div.recent-posts p {
+    font: 1.1em/1.4em 'PT Serif', Georgia, 'Times New Roman', Times, Serif;
     text-align: justify;
 }
 .article-content {
-    max-width: 50em;
+    max-width: 41.0em;
 }
-.article-content p, div.recent-posts p {
+.row-fluid {
+    max-width: 91.0em;
+}
+.index-page-content p, .article-content p, div.recent-posts p {
     font-size: inherit;
     font-variant: normal;
     line-height: 1.6em;
     text-transform: none;
 }
-.article-content p {
+.index-page-content p, .article-content p {
     margin: 20px 0;
 }
-.article-content blockquote {
+.index-page-content blockquote, .article-content blockquote {
     border-left: 0;
     margin: 20px 0 0 2em;
     padding: 0 0 0 20px;
 }
-.article-content blockquote:before {
+.index-page-content blockquote:before, .article-content blockquote:before {
     color: #646464;
     content: '\f10d';
     font: 18px FontAwesome;
@@ -214,7 +217,7 @@ article div.article-content ul:not(.articles-timeline) a:hover {
     text-decoration: inherit;
     position:absolute;
 }
-.article-content blockquote {
+.index-page-content blockquote, .article-content blockquote {
     font-family: 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
     font-size: inherit;
     font-variant: normal;
