@@ -34,12 +34,12 @@ Full archives of {{ SITENAME|striptags|e }} blog.
 <div class="row-fluid">
     <div class="span10 offset2">
         <div class="blog-archives">
-            {% set last_year = 0 %}
+            {% set loop_vars = {'last_year': 0} %}
             {% for article in dates %}
             {% set year = article.date.strftime('%Y') %}
-            {%if last_year != year %}
-            <h2 id="{{year }}"><a href="#{{year}}">{{ year }}</a></h2>
-            {% set last_year = year %}
+            {%if loop_vars.last_year != year %}
+            <h2 id="{{ year }}"><a href="#{{year}}">{{ year }}</a></h2>
+            {% if loop_vars.update({'last_year': year}) %}{% endif %}
             {% endif %}
             {% set next_year = 0 %}
             {% if not loop.last %}
