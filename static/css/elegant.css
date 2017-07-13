@@ -166,7 +166,7 @@ div.highlight {
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
 }
 .articles-in-tag li {
-    font: 1.1em/1.6em 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
+    font: 1.1em/1.45em 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
 }
 /* Article */
 article p:not(#list-of-translations):not(#post-share-links) a,
@@ -184,11 +184,12 @@ article div.article-content ul:not(.articles-timeline) a:hover {
     text-shadow: none;
 }
 .index-page-content, .article-content, div.recent-posts p {
-    font: 1.1em/1.4em 'PT Serif', Georgia, 'Times New Roman', Times, Serif;
+    font-size: 1.2em;
+    font-family: 'Titillium Web';
     text-align: justify;
 }
 .article-content {
-    max-width: 41.0em;
+    max-width: 38.0em;
 }
 .row-fluid {
     max-width: 91.0em;
@@ -196,7 +197,7 @@ article div.article-content ul:not(.articles-timeline) a:hover {
 .index-page-content p, .article-content p, div.recent-posts p {
     font-size: inherit;
     font-variant: normal;
-    line-height: 1.6em;
+    line-height: 1.45em;
     text-transform: none;
 }
 .index-page-content p, .article-content p {
@@ -606,4 +607,3 @@ div.figure.align-left, .article-content img.align-left {
     float: left;
     margin-right: 1.5em;
 }
-
